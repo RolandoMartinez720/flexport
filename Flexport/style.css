@@ -42,6 +42,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.button-class {
+	background: #fff;
+	border-color: #fff;
+	border-style: none;
+}
 /* STYLE RESET ABOVE */
 
 @font-face {
@@ -75,6 +80,7 @@ table {
  --green:rgb(79, 168, 96);
  --red:#FA5959;
  font-family: "GT America";
+ box-sizing: border-box;
 }
 
 body{
@@ -110,6 +116,8 @@ h2{
 
 button{
     border-radius: 5px;
+    font-size: 18px;
+    
 }
 
 header{
@@ -119,6 +127,7 @@ header{
     color: var(--bluegrey);
     background-color: var(--teal);
     line-height: 21px;
+    padding: 2%;
 }
 
 
@@ -129,5 +138,20 @@ header{
 .header-item{
     width:75%;
 padding: 0 10%;
+
 }
 
+.donate-button{
+    background-color: var(--red);
+    color: white;
+    min-width:max-content;
+    padding: 1em 2em;
+    justify-self: center;
+    align-self: center;
+    margin-right: 10%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.397);
+}
+
+button:hover{
+    box-shadow: none; 
+}
