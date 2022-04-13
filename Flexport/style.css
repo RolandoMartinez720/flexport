@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "GT America";
+    src: url('fonts/GT America Regular/GT America Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "GT America";
+    src: url('fonts/GT America Bold/GT America Bold.ttf') format("truetype");
+    font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: "GT America";
+    src: url('fonts/GT America Bold Italic/GT America Bold Italic.ttf') format("truetype");
+    font-weight: bold;
+    font-style: italic;
+  
+}
+
+/* VARS */
+:root{
+ --teal:rgb(69, 218, 190);
+ --greybg:rgb(36, 48, 62);
+ --green:rgb(79, 168, 96);
+ --red:#FA5959;
+ font-family: "GT America";
+}
+html{
+    background-color: var(--red);
+}
+
+.bold{
+    font-weight: bold;
+}
+.bold-italic{
+    font-weight: bold;
+    font-style: italic;
+}
+
+button{
+    border-radius: 5px;
+}
+
