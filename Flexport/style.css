@@ -121,13 +121,11 @@ button{
 }
 
 header{
-    position: fixed;
     min-height: 100px;
-    width:100%;
     color: var(--bluegrey);
     background-color: var(--teal);
     line-height: 21px;
-    padding: 2%;
+    padding: 0 10%;
 }
 
 
@@ -135,23 +133,51 @@ header{
     line-height: 24px;
 }
 
-.header-item{
-    width:75%;
-padding: 0 10%;
-
-}
 
 .donate-button{
     background-color: var(--red);
     color: white;
     min-width:max-content;
-    padding: 1em 2em;
-    justify-self: center;
+    margin-left: 10%;
+    padding: .75em 1.5em;
+    justify-self: flex-end;
     align-self: center;
-    margin-right: 10%;
+    
+
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.397);
-}
+} 
 
 button:hover{
     box-shadow: none; 
+}
+
+.nav-container{
+    border: 1px solid blue;
+    align-items: center;
+    
+    justify-content: flex-start;
+    padding: 0 10%;
+}
+nav{
+    border: 3px solid red;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    min-height: 75px;
+    }
+
+/* Visualizing flex border. temporary */
+
+nav>*{
+    border:1px solid red;
+    min-width: max-content;
+}
+
+.contact-us-button{
+    background-color: var(--green);
+    font-size: 16px;
+    color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.397);
+    padding: .75em 1.5em;
 }
