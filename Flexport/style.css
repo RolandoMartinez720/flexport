@@ -187,7 +187,7 @@ nav{
 
 nav>*{
     /* border:1px solid red; */
-    /* min-width: max-content; */
+    min-width: fit-content;
 }
 
 .contact-us-button{
@@ -212,18 +212,18 @@ button:active{
 
 .nav-links{
     color:rgb(70, 68, 68);
-    margin: 0 10%;
+    /* margin: 0 10%; */
     justify-content: space-between;
     gap:10px;
 }
 
 .nav-links>div{
-    flex-shrink:1;
+    flex-shrink:0;
 }
 
 .art-card{
     box-sizing: border-box;
-    height: 400px;
+    min-height: 400px;
     min-width: 100%;
     padding: 0 0 0 10%;
     background-color: var(--bluegrey)
@@ -243,4 +243,31 @@ button:active{
     background-position:100% 100%;
     flex-basis: 100%;
     padding-left: 200px;
+}
+
+.art-text>h2{
+    padding:20px 0 0 0;
+    font-weight: 500;
+    color:var(--green);
+    font-size: 28px;
+}
+
+.art-text>p{
+color:white;
+font-size: 14px;
+line-height: 24px;
+flex-shrink:0;
+
+}
+
+.donate-button-2{
+    background-color: var(--red);
+    color: white;
+    margin: 2em 0;
+    min-width:max-content;
+    padding: .75em 1.5em;
+    justify-self: flex-end;
+    align-self: center;
+    max-width: max-content;
+    
 }
