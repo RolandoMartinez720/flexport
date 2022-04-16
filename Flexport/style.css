@@ -223,14 +223,17 @@ button:active{
 
 .art-card{
     box-sizing: border-box;
-    min-height: 400px;
+    /* min-height: 400px; */
     min-width: 100%;
     padding: 0 0 0 10%;
     background-color: var(--bluegrey)
 }
 
 .art-text{
-    max-width: fit-content;
+    max-width: 30%;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2em;
 
 
 }
@@ -242,20 +245,19 @@ button:active{
     background-repeat: no-repeat;
     background-position:100% 100%;
     flex-basis: 100%;
-    padding-left: 200px;
 }
 
-.art-text>h2{
-    padding:20px 0 0 0;
+
+.art-text>h2,.map-text>h2{
     font-weight: 500;
     color:var(--green);
-    font-size: 28px;
+    font-size: 40px;
 }
 
 .art-text>p{
 color:white;
-font-size: 14px;
-line-height: 24px;
+font-size: 18px;
+line-height: 30px;
 flex-shrink:0;
 
 }
@@ -266,8 +268,44 @@ flex-shrink:0;
     margin: 2em 0;
     min-width:max-content;
     padding: .75em 1.5em;
-    justify-self: flex-end;
-    align-self: center;
+    align-self: flex-start;
     max-width: max-content;
     
+}
+
+.map-row-container{
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.map-image-container{
+background-image: url(assets/services\ example.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 0;
+width:100%;
+aspect-ratio: 1;
+box-sizing: border-box;
+
+
+}
+
+.map-text{
+    box-sizing: border-box;
+    width: 100%;    
+    align-items: flex-start;
+    justify-content: center;
+    padding:0  0;
+}
+
+.map-text>p{
+    padding-top: 20px;
+    line-height:24px;
+    font-size: 18px;
+    color:rgb(63, 60, 60);
+}
+
+.map-text>*{
+    padding: 0 8rem;
 }
