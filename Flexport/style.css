@@ -155,8 +155,7 @@ header{
     justify-self: flex-end;
     align-self: center;
     max-width: max-content;
-    
-
+    border-color: transparent;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.397);
 } 
 
@@ -199,7 +198,7 @@ nav>*{
     padding: .75em 1.5em;
 }
 
-.button-class:active{
+.button-class:active,button:active{
     opacity: .8;
 }
 
@@ -345,7 +344,6 @@ width:60%;}
  .card-image{
     width: 100px;
     height: auto;
-    align-self:flex-end;
  }
 
  .card-section-header{
@@ -358,15 +356,25 @@ width:60%;}
  }
 
  .card-class>*:nth-child(3), .card-class>*:nth-child(2){
-     max-width:75%;
+     /* max-width:75%; */
+     max-width:100%;
+     box-sizing: border-box;
+     padding:5px 10px;
  }
 
  .card-class>*:nth-child(3){
-     padding-bottom:10px;
-     line-height: 28px;
-     height: 300px;
+     padding-bottom:0;
+     line-height: 24px;
+     height: 250px;
  }
  .card-class>*:nth-child(2){
-height:100px; 
+height:50px; 
 }
 
+.card-class div:first-child{
+    padding-bottom:20px;
+}
+
+.card-class{
+    max-width:25%;
+}
