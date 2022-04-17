@@ -331,7 +331,7 @@ width:60%;}
 .card-heading{
     font-weight: bold;
     font-size:18px;
-}
+text-align: center;}
 
  .card-section{
      background-color: var(--bluegrey);
@@ -348,7 +348,8 @@ width:60%;}
 
  .card-section-header{
      font-size: 28px;
-     margin-bottom:35px;
+     margin-bottom:50px;
+     text-align: center;
  }
 
  .card-container{
@@ -376,5 +377,10 @@ height:50px;
 }
 
 .card-class{
-    max-width:25%;
+    max-width:23%;
+}
+
+.card-image{
+    margin: auto;
+    min-width: fit-content;
 }
