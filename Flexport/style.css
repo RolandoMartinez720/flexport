@@ -384,3 +384,66 @@ height:50px;
     margin: auto;
     min-width: fit-content;
 }
+
+/*     <!-- ###################### ROW 6 ######################### -->
+ */
+
+ .supporter-section{
+     width: 100%;
+ }
+ 
+ .supporter-image-container{
+     box-sizing: border-box;
+     padding:40px 10%;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 20px;
+    
+ }
+
+ .supporter-section-header{
+     padding:2em 10% 0;
+     box-sizing: border-box;
+     font-size: 28px;
+     color: rgba(110, 106, 106, 0.747);
+ }
+
+ .supporter-image{
+  
+        filter: grayscale(100%) contrast(90%) opacity(80%);
+  }
+  /*     <!-- ###################### ROW 7 ######################### -->
+ */
+
+ .impact-section{
+     width:100%;
+     padding:0 10%;
+     background-color: var(--bluegrey);
+ }
+
+ .impact-section-heading{
+     color:white;
+     font-size:42px;
+     padding-top:75px;
+ }
+
+ .impact-number{
+     color:white;
+     font-size: 60px;
+     font-weight: bold;
+ }
+
+ .impact-text{
+     color: white;
+     max-width: 30ch;
+     font-size: 22px;
+     line-height:32px;
+     padding-top:30px;
+ }
+
+ .impact-card-flex-container{
+    box-sizing:border-box; 
+    max-width: 80%;
+    padding:60px 0;
+    justify-content: space-between;
+ }
