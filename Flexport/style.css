@@ -509,3 +509,134 @@ height:50px;
  }
  /*     <!-- ###################### ROW 9 ######################### -->
  */
+
+ /* ####################### MEDIA QUERIES ######################## */
+ @media screen and ( max-width: 1250px) {
+
+    .header{
+
+        display:none;
+
+    }
+
+
+
+    .img-container{
+
+        display: none;
+
+    }
+
+
+
+    .art-text{
+
+        max-width: 90%;
+
+    }
+
+
+
+    .map-row-container{
+
+        flex-direction: column-reverse;
+
+    }
+
+    .map-image-container{
+
+height:300px;
+
+background-position: center;     }
+
+
+
+    .map-text{
+
+        padding:100px 0;
+
+    }
+
+    .map-text>*{
+
+        padding: 0 10%;
+
+    }
+
+
+
+    .map-text>h2{
+
+        width: 100%;
+
+    }
+
+
+
+    .map-text>p{
+
+        width:80%;
+
+    }
+
+    .card-container{
+
+        flex-direction: column;
+
+        gap:30px;
+
+        justify-content:center;
+
+    }
+
+    .card-class{
+
+        max-width: 100%;
+
+    }
+
+
+
+    .card-text{
+
+        height:150px;
+
+    }
+
+
+
+    .card-class>*{
+
+        margin:auto;
+
+        text-align: center;
+
+        max-width: 80%;
+
+    }
+
+    .supporter-image{
+
+        width: 100px;
+
+        height:auto;
+
+    }
+
+.supporter-section-header{
+
+text-align: center;}
+
+
+
+    .supporter-image-container{
+
+        margin: auto;
+
+        max-width: 90%;
+
+        justify-content: center;
+
+    }
+
+}
