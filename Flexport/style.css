@@ -93,6 +93,16 @@ body{
     display: flex;
 }
 
+.fixed{
+    position: fixed;
+    width:100%;
+    z-index: 15;
+}
+
+.relative{
+    position: relative;
+}
+
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -136,8 +146,6 @@ button{
  */
 
 header{
-    position: fixed;
-    opacity:.5;
     box-sizing: border-box;
     width:100%;
     min-height: 100px;
@@ -180,8 +188,6 @@ button:hover{
 /*     <!-- ###################### ROW 2 ######################### -->
  */
 .nav-container{
-    position: fixed;    
-    opacity: .5;
     z-index: 1;
     top:0px;
     box-sizing: border-box;
@@ -202,6 +208,9 @@ nav{
 
 
     }
+.nav-container{
+    background-color:white;
+}
 
 nav>*{
     /* border:1px solid red; */
@@ -242,11 +251,11 @@ nav>*{
 /*     <!-- ###################### ROW 3 ######################### -->
  */
 
-.art-card{
+.art-card-section{
     box-sizing: border-box;
     /* min-height: 400px; */
     min-width: 100%;
-    padding: 0 0 0 10%;
+    padding: 175px 0 0 10%;
     background-color: var(--bluegrey)
 }
 
