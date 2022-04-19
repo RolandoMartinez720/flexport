@@ -510,8 +510,26 @@ height:50px;
  /*     <!-- ###################### ROW 9 ######################### -->
  */
 
+ /*     <!-- ###################### drop down menu ######################### --> */
+
+ .drop-down-link-section{
+     transform: scale(0, 0);
+     background-color: white;
+ }
+
+ .drop-down-links>*{
+     padding-bottom: 10px;
+ }
+
  /* ####################### MEDIA QUERIES ######################## */
  @media screen and ( max-width: 1250px) {
+
+     .drop-down-link-section{
+     display: flex-column;
+     transform: scale(1 ,1);
+     padding:0 5px;
+ }
+
 
     .header{
 
@@ -527,7 +545,9 @@ height:50px;
 
     }
 
-
+    .art-card-section{
+        padding-top: 300px;
+    }
 
     .art-text{
 
@@ -637,6 +657,37 @@ text-align: center;}
 
         justify-content: center;
 
+
     }
 
+    #select-language-icon{
+        display: none;
+    }
+
+.nav-links{
+    display: none;
+}
+
+.impact-card-flex-container{
+flex-direction: column;
+align-items: center;
+
+}
+.impact-section-heading{
+    text-align: center;
+}
+.impact-card{
+    padding-bottom: 20x;
+}
+
+.contact-us-button{
+    display: none;
+}
+
+.nav-bar{
+    justify-content: flex-start;
+}
+.nav-container{
+    padding:20px 5px;
+}
 }
