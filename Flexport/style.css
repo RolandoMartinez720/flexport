@@ -96,6 +96,7 @@ body{
 .fixed{
     position: fixed;
     width:100%;
+    box-sizing: border-box;
     z-index: 15;
 }
 
@@ -191,7 +192,7 @@ button:hover{
     z-index: 1;
     top:0px;
     box-sizing: border-box;
-    min-width:100%;
+    max-width:100%;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
@@ -201,7 +202,7 @@ nav{
     font-size: 14px;
     justify-content: space-between;
     align-items: center;
-    flex-basis:100%;
+    width:100%;
     min-height: 75px;
     gap: 10px;
     min-width:fit-content;
@@ -528,6 +529,12 @@ height:50px;
      display: flex-column;
      transform: scale(1 ,1);
      padding:0 5px;
+     width: 100vw;
+    box-sizing: border-box;
+
+ }
+
+ .drop-down-links{
  }
 
 
@@ -688,6 +695,26 @@ align-items: center;
     justify-content: flex-start;
 }
 .nav-container{
-    padding:20px 5px;
+    padding:20px 5px;   
+    max-width: 100%;    
 }
+
+.video-section{
+    flex-direction: column;
 }
+
+.video-section>*{
+    width:100%;
+
+}
+
+.video-section-text-container{
+    padding: 50px 50px;
+    max-width: 100%;
+}
+.video-section-heading, .video-section-paragraph{
+    width:100%;
+    padding: 20px 20px;
+    
+}
+ }
