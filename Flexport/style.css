@@ -79,6 +79,7 @@ table {
  --bluegrey:rgb(36, 48, 62);
  --green:rgb(79, 168, 96);
  --red:#FA5959;
+ --yellow:rgb(250, 207, 104);
  font-family: "GT America";
  box-sizing: border-box;
 }
@@ -114,6 +115,18 @@ h2{
     font-size: 14px;
 }
 
+.yellow-color{
+    color:var(--yellow);
+}
+
+.green-color{
+    color:var(--green);
+}
+
+.teal-color{
+    color:var(--teal);
+}
+
 button{
     border-radius: 5px;
     font-size: 18px;
@@ -123,12 +136,14 @@ button{
  */
 
 header{
+    position: fixed;
+    opacity:.5;
     box-sizing: border-box;
     width:100%;
     min-height: 100px;
     color: var(--bluegrey);
     background-color: var(--teal);
-  
+    z-index: 2;
     padding: 7px 10%;
     justify-content: space-between;
 }
@@ -165,7 +180,10 @@ button:hover{
 /*     <!-- ###################### ROW 2 ######################### -->
  */
 .nav-container{
-    /* border: 1px solid blue; */
+    position: fixed;    
+    opacity: .5;
+    z-index: 1;
+    top:0px;
     box-sizing: border-box;
     min-width:100%;
     align-items: center;
@@ -325,7 +343,7 @@ width:60%;}
  */
 .learn-more{
     background-color: var(--red);
-    font-size:18px;
+    font-size:12px;
 }
 
 .card-heading{
@@ -344,6 +362,7 @@ text-align: center;}
  .card-image{
     width: 100px;
     height: auto;
+    margin: auto;
  }
 
  .card-section-header{
@@ -365,8 +384,10 @@ text-align: center;}
 
  .card-class>*:nth-child(3){
      padding-bottom:0;
+     font-size: 18px;
      line-height: 24px;
      height: 250px;
+     text-align: justify;
  }
  .card-class>*:nth-child(2){
 height:50px; 
@@ -380,10 +401,7 @@ height:50px;
     max-width:23%;
 }
 
-.card-image{
-    margin: auto;
-    min-width: fit-content;
-}
+
 
 /*     <!-- ###################### ROW 6 ######################### -->
  */
@@ -416,6 +434,7 @@ height:50px;
  */
 
  .impact-section{
+     box-sizing: border-box;
      width:100%;
      padding:0 10%;
      background-color: var(--bluegrey);
@@ -428,7 +447,6 @@ height:50px;
  }
 
  .impact-number{
-     color:white;
      font-size: 60px;
      font-weight: bold;
  }
@@ -443,7 +461,42 @@ height:50px;
 
  .impact-card-flex-container{
     box-sizing:border-box; 
-    max-width: 80%;
+    max-width: 100%;
     padding:60px 0;
     justify-content: space-between;
  }
+
+ /*     <!-- ###################### ROW 8 ######################### -->
+ */
+
+ .video-section{
+     width:100%;
+     padding: 0 0 0 0;
+     box-sizing: border-box;
+ }
+ .video-section-video{
+     width: 50%;
+ }
+ .video-section-text-container{
+     max-width: 50%;
+     justify-content: center;
+     align-items: center;
+
+ }
+ .video-section-text-container>*{
+     max-width: 80%;
+ }
+
+ .video-section-heading{
+     font-size:28px;
+     line-height: 32px;
+     padding-bottom: 1em;
+ }
+
+ .video-section-paragraph{
+     color:rgb(138, 135, 135);
+     font-size: 18px;
+     line-height: 1.5em;
+ }
+ /*     <!-- ###################### ROW 9 ######################### -->
+ */
