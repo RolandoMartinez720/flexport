@@ -223,7 +223,7 @@ nav>*{
     font-size: 16px;
     color: white;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.397);
-    padding: .75em 1.5em;
+    padding: .75em 1.75em;
 }
 
 .button-class:active,button:active{
